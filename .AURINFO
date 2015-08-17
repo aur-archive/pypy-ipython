@@ -1,0 +1,20 @@
+pkgbase = pypy-ipython
+	pkgdesc = An enhanced Interactive Python shell. pypy version
+	pkgver = 2.2.0
+	pkgrel = 1
+	url = http://ipython.org
+	arch = any
+	license = BSD
+	makedepends = sqlite
+	depends = pypy>=2.3
+	depends = pypy<=2.4
+	depends = sqlite
+	source = https://pypi.python.org/packages/source/i/ipython/ipython-2.2.0.tar.gz
+	source = revert-xdg.patch
+	source = pypy3-version.patch
+
+pkgname = pypy-ipython
+	optdepends = pypy-pyzmq: for ipython notebook and ipython qtconcole
+	optdepends = pypy-tornado: for ipython notebook
+	optdepends = pypy-jinja: for ipython notebook
+
